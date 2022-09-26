@@ -735,11 +735,6 @@ def downloadsocks(choice):
 		except:
 			pass
 		try:
-            r = requests.get("https://www.proxy-list.download/api/v1/get?type=http",timeout=5)
-			f.write(r.content)
-		except:
-			pass
-		try:
             r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=10000&country=all",timeout=5)
 			f.write(r.content)
 		except:
